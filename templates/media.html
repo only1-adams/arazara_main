@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% load static %} {% block mainContent %}
+<section class="py-12 bg-[#F9F6F6]">
+	<p
+		class="text-[2.5rem] text-center md:text-[3.2rem] lg:text-[4.5rem] font-bold text-customBlack px-5 md:px-48"
+	>
+		Media
+	</p>
+	<div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 px-[7rem] gap-7">
+		<div class="flex flex-col w-full gap-y-7">
+			<img class="w-full" src="{% static 'images/about-img.png' %}" alt="" />
+			<span class="text-[1.7rem] text-customBlack"
+				>Lorem ipsum dolor sit amet consectetur. Amet pellentesque nisl non
+				morbi ornare ipsum mauris.
+			</span>
+		</div>
+		<div class="flex flex-col w-full gap-y-7">
+			<img class="w-full" src="{% static 'images/about-img.png' %}" alt="" />
+			<span class="text-[1.7rem] text-customBlack"
+				>Lorem ipsum dolor sit amet consectetur. Amet pellentesque nisl non
+				morbi ornare ipsum mauris.
+			</span>
+		</div>
+		<div class="flex flex-col w-full gap-y-7">
+			<img class="w-full" src="{% static 'images/about-img.png' %}" alt="" />
+			<span class="text-[1.7rem] text-customBlack"
+				>Lorem ipsum dolor sit amet consectetur. Amet pellentesque nisl non
+				morbi ornare ipsum mauris.
+			</span>
+		</div>
+	</div>
+</section>
+{% endblock mainContent %}
