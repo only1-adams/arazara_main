@@ -1,4 +1,7 @@
-{% extends 'base.html' %} {% load static %} {% block mainContent %}
+{% extends 'base.html' %} 
+{% load static %} 
+{% block mainContent %}
+{% include 'includes/csr.html' %}
 <section
 	class="py-12 flex flex-col lg:flex-row items-center lg:gap-x-24 xl:gap-0 px-[2rem] lg:px-[3rem] xl:px-[7rem] min-[1440px]:px-[13rem] 2xl:px-[15rem]"
 >
@@ -9,12 +12,12 @@
 			The Gateway to MSMEs Ecosystem
 		</h1>
 		<p class="text-[1.5rem] mb-6 text-center lg:text-left md:px-32 lg:px-0">
-			ARAZARA is dedicated to MSMEs, we are an Africa-oriented communities
-			enterprise driven company focused on SME-capacity building and Technology
-			products. 
+			ARAZARA is a company that is committed to supporting MSMEs. Our enterprise
+			is focused on serving African communities and we specialize in providing
+			SME-capacity building and technology products.
 		</p>
 		<a
-			href=""
+			href="mailto:uokwechime@arazara.com.ng"
 			class="text-[1.5rem] w-max font-medium text-customBlack flex items-center justify-center px-8 py-5 bg-main border-[1.5px] border-[#F6F5F5] cursor-pointer transition-all duration-200 hover:bg-transparent hover:border-main"
 			>LET'S TALK</a
 		>
@@ -119,9 +122,8 @@
 		</h2>
 		<span
 			class="px-5 md:px-0 flex md:inline text-[1.5rem] font-medium text-customBlack"
-			>ARAZARA is dedicated to MSMEs, we are an Africa-oriented communities
-			enterprising driven company focused on SME-capacity building and
-			Technology products. 
+			>Our company offers a range of services to support the growth and
+			development of businesses and individuals.
 		</span>
 		<div class="mt-12 flex flex-col md:gap-y-8">
 			<div class="w-full bg-customBlack p-7">
@@ -130,9 +132,8 @@
 					>Corporate Management Training</span
 				>
 				<p class="mt-3 text-[1.7rem] text-[#DEDBDB]">
-					A well defined and effectively delivered capacity building program is
-					a risk management fundamental for any credit platform designed for
-					SMEs in Nigeria.
+					Our Corporate Management Training, is designed to help businesses of
+					all sizes improve their operations, management, and leadership skills.
 				</p>
 			</div>
 			<div class="w-full bg-lightMain p-7">
@@ -141,9 +142,11 @@
 					>Documentary, Research and Advocacy</span
 				>
 				<p class="mt-3 text-[1.7rem] text-[#5F5E5E]">
-					A well defined and effectively delivered capacity building program is
-					a risk management fundamental for any credit platform designed for
-					SMEs in Nigeria.
+					we offer Documentary, Research, and Advocacy services to help
+					organizations and individuals gather information and develop
+					compelling narratives to support their cause. Our team of experts is
+					committed to delivering high-quality services that meet the unique
+					needs of each of our clients.
 				</p>
 			</div>
 		</div>
@@ -156,9 +159,9 @@
 					>MSMEs Capacity Building</span
 				>
 				<p class="mt-3 text-[1.7rem] text-[#5F5E5E]">
-					A well defined and effectively delivered capacity building program is
-					a risk management fundamental for any credit platform designed for
-					SMEs in Nigeria.
+					Our MSMEs Capacity Building program is designed to help small and
+					medium-sized enterprises build the skills and knowledge they need to
+					succeed in today's competitive marketplace.
 				</p>
 			</div>
 			<div class="w-full bg-lightMain p-7">
@@ -167,9 +170,9 @@
 					>Youth Development Training</span
 				>
 				<p class="mt-3 text-[1.7rem] text-[#5F5E5E]">
-					A well defined and effectively delivered capacity building program is
-					a risk management fundamental for any credit platform designed for
-					SMEs in Nigeria.
+					Our Youth Development Training program is focused on empowering young
+					people with the skills and knowledge they need to succeed in their
+					personal and professional lives.
 				</p>
 			</div>
 		</div>
@@ -182,13 +185,18 @@
 		Corporate Social Responsibility
 	</p>
 	<div
+		x-data="csr"
 		class="px-5 md:px-[2rem] lg:px-[3rem] xl:px-[7rem] min-[1440px]:px-[13rem] 2xl:px-[15rem] bg-lightMain py-10"
 	>
 		<div
 			class="flex flex-col items-center lg:items-start lg:flex-row gap-x-12 mb-12"
 		>
 			<div class="w-[90%] lg:w-1/2 mb-10 lg:mb-0">
-				<img class="w-full object-cover" src="{% static 'images/Frame 23.png' %}" alt="" />
+				<img
+					class="w-full object-cover"
+					src="{% static 'images/Frame 23.png' %}"
+					alt=""
+				/>
 			</div>
 			<div class="w-[90%] lg:w-1/2">
 				<p class="text-[3rem] text-customBlack font-medium">
@@ -203,6 +211,8 @@
 					available resources to overcome these challenges.
 				</p>
 				<span
+					x-data
+					@click="$dispatch('csr',skills)"
 					class="mt-8 text-[1.5rem] w-max font-medium text-customBlack flex items-center justify-center px-8 py-5 border-[1.5px] border-main cursor-pointer transition-all duration-200 hover:bg-transparent hover:bg-main"
 					>Learn More</span
 				>
@@ -225,19 +235,29 @@
 					not part of educational curriculum in Nigeria. 
 				</p>
 				<span
+					x-data
+					@click="$dispatch('csr',sanitary)"
 					class="mt-8 text-[1.5rem] w-max font-medium text-customBlack flex items-center justify-center px-8 py-5 border-[1.5px] border-main cursor-pointer transition-all duration-200 hover:bg-transparent hover:bg-main"
 					>Learn More</span
 				>
 			</div>
 			<div class="order-first lg:order-none w-[90%] lg:w-1/2 mb-10 lg:mb-0">
-				<img class="w-full object-cover" src="{% static 'images/Frame 23.png' %}" alt="" />
+				<img
+					class="w-full object-cover"
+					src="{% static 'images/Frame 23.png' %}"
+					alt=""
+				/>
 			</div>
 		</div>
 		<div
 			class="flex flex-col items-center lg:items-start lg:flex-row gap-x-12 mb-12"
 		>
 			<div class="w-[90%] lg:w-1/2 mb-10 lg:mb-0">
-				<img class="w-full object-cover" src="{% static 'images/Frame 23.png' %}" alt="" />
+				<img
+					class="w-full object-cover"
+					src="{% static 'images/Frame 23.png' %}"
+					alt=""
+				/>
 			</div>
 			<div class="w-[90%] lg:w-1/2">
 				<p class="text-[3rem] text-customBlack font-medium">“DMW” Initiative</p>
@@ -250,6 +270,10 @@
 					global performing industry.
 				</p>
 				<span
+					x-data
+					@click="
+						$dispatch('csr',dmw)
+					"
 					class="mt-8 text-[1.5rem] w-max font-medium text-customBlack flex items-center justify-center px-8 py-5 border-[1.5px] border-main cursor-pointer transition-all duration-200 hover:bg-transparent hover:bg-main"
 					>Learn More</span
 				>
@@ -446,11 +470,10 @@
 			We pride ourselves on quick responses. Contact us now and expect a reply
 			in no time!
 		</p>
-		<span
-			x-data
-			@click="$dispatch('contacting')"
+		<a
+			href="mailto:uokwechime@arazara.com.ng"
 			class="text-[1.5rem] w-max font-medium text-customBlack flex items-center justify-center px-8 py-5 bg-main border-[1.5px] border-main cursor-pointer transition-all duration-200 hover:text-white hover:bg-transparent hover:border-main"
-			>LET'S TALK</span
+			>LET'S TALK</a
 		>
 	</div>
 	<div class="w-[90%] md:w-[45%] lg:w-1/2">
