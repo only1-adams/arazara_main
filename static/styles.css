@@ -833,10 +833,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .border-\[1px\]{
   border-width: 1px;
 }
@@ -1306,6 +1302,10 @@ html {
 
   .md\:overflow-hidden{
     overflow: hidden;
+  }
+
+  .md\:rounded-lg{
+    border-radius: 0.5rem;
   }
 
   .md\:px-48{
