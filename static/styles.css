@@ -655,6 +655,11 @@ video {
   height: 246px;
 }
 
+.h-max{
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .w-full{
   width: 100%;
 }
@@ -692,12 +697,16 @@ video {
   width: 300px;
 }
 
-.w-\[20\%\]{
-  width: 20%;
-}
-
 .w-\[7\%\]{
   width: 7%;
+}
+
+.w-\[15\%\]{
+  width: 15%;
+}
+
+.w-\[20\%\]{
+  width: 20%;
 }
 
 .rotate-\[90deg\]{
@@ -707,6 +716,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .flex-col{
@@ -739,6 +752,10 @@ video {
 
 .gap-7{
   gap: 1.75rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .gap-y-10{
@@ -789,10 +806,6 @@ video {
   row-gap: 1.75rem;
 }
 
-.gap-y-4{
-  row-gap: 1rem;
-}
-
 .gap-x-10{
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
@@ -833,6 +846,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
 .border-\[1px\]{
   border-width: 1px;
 }
@@ -843,6 +860,10 @@ video {
 
 .border-t-\[1\.5px\]{
   border-top-width: 1.5px;
+}
+
+.border-b{
+  border-bottom-width: 1px;
 }
 
 .border-white{
@@ -868,6 +889,11 @@ video {
 .border-t-\[\#E8E4E4\]{
   --tw-border-opacity: 1;
   border-top-color: rgb(232 228 228 / var(--tw-border-opacity));
+}
+
+.border-b-customBlack{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(36 36 36 / var(--tw-border-opacity));
 }
 
 .bg-\[\#F9F6F6\]{
@@ -929,6 +955,11 @@ video {
      object-fit: cover;
 }
 
+.object-scale-down{
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
 .p-12{
   padding: 3rem;
 }
@@ -943,10 +974,6 @@ video {
 
 .p-8{
   padding: 2rem;
-}
-
-.p-5{
-  padding: 1.25rem;
 }
 
 .py-12{
@@ -1009,6 +1036,10 @@ video {
 
 .pb-0{
   padding-bottom: 0px;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 
 .text-center{
@@ -1193,6 +1224,10 @@ html {
     top: 32px;
   }
 
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:inline{
     display: inline;
   }
@@ -1213,9 +1248,12 @@ html {
     height: 484px;
   }
 
-  .md\:h-max{
-    height: -moz-max-content;
-    height: max-content;
+  .md\:h-\[452px\]{
+    height: 452px;
+  }
+
+  .md\:max-h-\[450px\]{
+    max-height: 450px;
   }
 
   .md\:w-\[85\%\]{
@@ -1248,6 +1286,10 @@ html {
 
   .md\:w-\[431px\]{
     width: 431px;
+  }
+
+  .md\:w-\[7\%\]{
+    width: 7%;
   }
 
   .md\:w-\[10\%\]{

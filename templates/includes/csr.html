@@ -14,7 +14,7 @@
 			<div
 				x-show="isOpen"
 				x-transition
-				class="md:rounded-lg fixed z-[3] w-full md:w-[95%] lg:w-[581px] top-0 md:top-[32px] bg-white h-full md:h-max left-0 right-0 m-auto p-8 overflow-hidden"
+				class="md:rounded-lg fixed z-[3] w-full md:w-[95%] lg:w-[581px] top-0 md:top-[32px] bg-white h-full md:max-h-[450px] left-0 right-0 m-auto p-8 overflow-auto"
 			>
 				<div
 					class="flex items-center justify-end text-customBlack text-[2rem] md:text-[3rem] font-bold"
@@ -40,14 +40,14 @@
 						</svg>
 					</span>
 				</div>
-				<div class="mt-8 w-full">
+				<div class="mt- md:mt-0 w-full">
 					<span
 						x-text="csr.title"
 						class="text-[2rem] md:text-[3rem] font-bold"
 					></span>
 					<p
-						x-text="csr.content"
-						class="mt-12 text-[1.7rem] text-customBlack"
+						x-html="csr.content"
+						class="mt-8 text-[1.7rem] text-customBlack"
 					></p>
 				</div>
 			</div>
