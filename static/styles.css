@@ -697,10 +697,6 @@ video {
   width: 300px;
 }
 
-.w-\[7\%\]{
-  width: 7%;
-}
-
 .w-\[15\%\]{
   width: 15%;
 }
@@ -953,11 +949,6 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-scale-down{
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
 }
 
 .p-12{
@@ -1246,10 +1237,6 @@ html {
 
   .md\:h-\[484px\]{
     height: 484px;
-  }
-
-  .md\:h-\[452px\]{
-    height: 452px;
   }
 
   .md\:max-h-\[450px\]{
