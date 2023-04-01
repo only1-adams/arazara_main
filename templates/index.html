@@ -111,6 +111,7 @@
 </section>
 <section
 	id="services"
+	x-data="csr"
 	class="bg-main pt-12 pb-0 md:py-12 md:px-[2rem] lg:px-[3rem] xl:px-[7rem] min-[1440px]:px-[13rem] 2xl:px-[15rem] flex flex-col items-center md:items-start md:flex-row md:gap-8"
 >
 	<div class="w-full md:w-1/2">
@@ -135,6 +136,12 @@
 					skills acquisition Programs for individual social investors,
 					government and multilateral.
 				</p>
+				<span
+					x-data
+					@click="$dispatch('csr',corporate)"
+					class="mt-8 text-[1.5rem] w-max font-medium text-white flex items-center justify-center px-8 py-5 border-[1.5px] border-main cursor-pointer transition-all duration-200 hover:bg-transparent hover:bg-main"
+					>Learn More</span
+				>
 			</div>
 			<div class="w-full bg-lightMain p-7">
 				<img class="mb-5" src="{% static 'images/documentary.png' %}" alt="" />
@@ -146,6 +153,12 @@
 					awareness and information on the areas of need requiring social
 					investment.
 				</p>
+				<span
+					x-data
+					@click="$dispatch('csr',docs)"
+					class="mt-8 text-[1.5rem] w-max font-medium text-customBlack flex items-center justify-center px-8 py-5 border-[1.5px] border-main cursor-pointer transition-all duration-200 hover:bg-transparent hover:bg-main"
+					>Learn More</span
+				>
 			</div>
 		</div>
 	</div>
@@ -160,6 +173,12 @@
 					At Arazara Consulting, we work with the cluster leaders to segment
 					members for capacity building.
 				</p>
+				<span
+					x-data
+					@click="$dispatch('csr',msmes)"
+					class="mt-8 text-[1.5rem] w-max font-medium text-customBlack flex items-center justify-center px-8 py-5 border-[1.5px] border-main cursor-pointer transition-all duration-200 hover:bg-transparent hover:bg-main"
+					>Learn More</span
+				>
 			</div>
 			<div class="w-full bg-lightMain p-7">
 				<img class="mb-5" src="{% static 'images/youth-dev.png' %}" alt="" />
@@ -171,6 +190,12 @@
 					acquire relevant life skills as part of the youth development
 					initiative.
 				</p>
+				<span
+					x-data
+					@click="$dispatch('csr',youth)"
+					class="mt-8 text-[1.5rem] w-max font-medium text-customBlack flex items-center justify-center px-8 py-5 border-[1.5px] border-main cursor-pointer transition-all duration-200 hover:bg-transparent hover:bg-main"
+					>Learn More</span
+				>
 			</div>
 			<div class="w-full bg-lightMain p-7">
 				<img class="mb-5" src="{% static 'images/tec_products.png' %}" alt="" />
@@ -182,6 +207,12 @@
 					marketing, coding and programming, management, design and content
 					development on the ecosystem space.
 				</p>
+				<span
+					x-data
+					@click="$dispatch('csr',training)"
+					class="mt-8 text-[1.5rem] w-max font-medium text-customBlack flex items-center justify-center px-8 py-5 border-[1.5px] border-main cursor-pointer transition-all duration-200 hover:bg-transparent hover:bg-main"
+					>Learn More</span
+				>
 			</div>
 		</div>
 	</div>

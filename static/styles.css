@@ -603,6 +603,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -613,10 +617,6 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
 }
 
 .block{
@@ -716,6 +716,10 @@ video {
 
 .list-disc{
   list-style-type: disc;
+}
+
+.list-decimal{
+  list-style-type: decimal;
 }
 
 .flex-col{
